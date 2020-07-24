@@ -472,8 +472,7 @@ s.place(x=50, y=50)
 
 # creation of buttons and placement of components
 # note: placement of components is order-sensitive
-for component, y_coord in zip(
-    [
+components = [
         Button(window, text="Create Visual", command=create),
         Button(window, text="Bubble Sort", command=bubble),
         Button(window, text="Selection Sort", command=selection),
@@ -486,9 +485,9 @@ for component, y_coord in zip(
         comparisons,
         iterations,
         elapsed,
-    ],
-    range(115, 715, 50),
-):
+    ]
+
+for component, y_coord in zip(components,range(115, 715, 50)):
     component.place(x=50, y=y_coord)
 
 # mainloop
