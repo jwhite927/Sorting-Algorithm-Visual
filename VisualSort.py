@@ -241,8 +241,9 @@ def print_rectangles(val1, val2):
 
 def print_final():
     clear()
-    for index in range(s.get()):
-        canvas.create_rectangle(coordinates_list[index], fill="green")
+    if coordinates_list:
+        for index in range(s.get()):
+            canvas.create_rectangle(coordinates_list[index], fill="green")
 
 
 def swap(g, j):
