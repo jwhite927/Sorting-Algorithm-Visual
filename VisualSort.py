@@ -135,8 +135,8 @@ def launch_test():
 
     # place checkboxes
     y_prime_prime = 64
-    for btn in range(len(btn_list)):
-        btn_list[btn].place(x=48, y=y_prime_prime)
+    for btn in btn_list:
+        btn.place(x=48, y=y_prime_prime)
         y_prime_prime += 32
 
     # three labels
